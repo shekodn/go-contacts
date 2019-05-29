@@ -33,7 +33,7 @@ func (account *Account) Validate() (map[string] interface{}, bool) {
     }
 
     if len(account.Password) < 6 {
-        return u.Message(false, "Password is requiered"), false
+        return u.Message(false, "Password is requiered. It should be at least 6 characters long"), false
     }
 
     // Email must be unique
